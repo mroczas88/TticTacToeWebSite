@@ -1,0 +1,68 @@
+html,
+body {
+    padding: 0 0 0 0;
+    margin: 0;
+    height: 100%;
+}
+
+#firstScreen {
+    height: 100%;
+    width: 100%;
+    background: url(Images/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#menu {
+    position: fixed;
+
+    height: 100px;
+    width: 100%;
+    background: black;
+}
+
+#menuButtons {
+    position: fixed;
+    right: 200px;
+    top: 10px;
+    align-items: center;
+    font-family: "Lato";
+    font-size: 20px;
+}
+
+.menuButton {    
+    box-sizing: border-box;
+    height: 80px;
+    width: auto;
+    color: white;
+    display: inline-block;
+    /*border: solid;*/
+    border-color: aliceblue;
+    padding: 5px 10px 5px 10px;
+    margin-right: 30px;
+}
+
+.menuButton:last-child {
+    margin-right: 0px;
+
+}
+
+.menuButton p:hover {
+    cursor: pointer;
+    color: red;
+    /* Firefox */
+    -moz-transition: color 0.35s;
+    /* WebKit */
+    -webkit-transition: color 0.35s;
+    /* Opera */
+    -o-transition: color 0.35s;
+    /* Standard */
+    transition: color 0.35s;
+
+}
+
+#secondScreen {
+    height: 100%;
+}
