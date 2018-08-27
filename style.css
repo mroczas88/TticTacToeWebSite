@@ -1,7 +1,7 @@
 html,
 body {
     padding: 0 0 0 0;
-    margin: 0;
+    margin: 0 0 0 0;
     height: 100%;
 }
 
@@ -10,59 +10,107 @@ body {
     width: 100%;
     background: url(Images/background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #menu {
     position: fixed;
-
     height: 100px;
     width: 100%;
-    background: black;
+    background: #232323;
+    border-bottom: solid 1px;
+    border-color: #676767;
+
 }
 
 #menuButtons {
     position: fixed;
-    right: 200px;
-    top: 10px;
-    align-items: center;
+    left: 35%;
     font-family: "Lato";
-    font-size: 20px;
+    font-size: 140%;
 }
 
-.menuButton {    
-    box-sizing: border-box;
-    height: 80px;
-    width: auto;
-    color: white;
+.menuButton {
     display: inline-block;
-    /*border: solid;*/
-    border-color: aliceblue;
-    padding: 5px 10px 5px 10px;
+    box-sizing: border-box;
+    position: relative;
+    top: 33px;
+    height: 34px;
+    width: auto;
+    color: #efefef;
+    /*border: solid;
+    border-color: aliceblue;*/
     margin-right: 30px;
+    -webkit-transition: transform 0.25s;
+    -moz-transition: transform 0.25s;
+    -o-transition: transform 0.25s;
+    transition: transform 0.25s;
 }
 
 .menuButton:last-child {
-    margin-right: 0px;
+    margin-right: 0%
+}
+
+.menuButton:hover {
+    cursor: pointer;
+    color: #dedede;
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
 
 }
 
-.menuButton p:hover {
-    cursor: pointer;
-    color: red;
-    /* Firefox */
-    -moz-transition: color 0.35s;
-    /* WebKit */
-    -webkit-transition: color 0.35s;
-    /* Opera */
-    -o-transition: color 0.35s;
-    /* Standard */
-    transition: color 0.35s;
+#logo {
+    position: fixed;
+    top: 5px;
+    left: 10%;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+}
+#logo:hover {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
 
+.square {
+    width: 20px;
+    height: 20px;
+    color: #dedede;
+}
+
+.v {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-color: #dedede;
+}
+
+
+.h {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-color: #dedede;
+}
+.h img {
+    position: relative;
+    top: 2px;
 }
 
 #secondScreen {
     height: 100%;
+}
+
+#thirtScreen {
+    height: 100%;
+    background-color: aqua;
 }
