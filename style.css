@@ -3,6 +3,7 @@ body {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     height: 100%;
+    font-weight: 400;
 }
 
 #firstScreen {
@@ -13,23 +14,41 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
 }
 
 #menu {
-    position: fixed;
+    position: absolute;
     height: 100px;
     width: 100%;
-    background: #232323;
-    border-bottom: solid 1px;
-    border-color: #676767;
+    /*background: #454545;
+    opacity: 05;*/
+    /*box-shadow: 1px 0px 15px 0px #555555;*/
+}
+
+#logoName {
+    position: absolute;
+    left: 25%;
+
+    box-sizing: border-box;
+
+    width: auto;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 29px;
+
 
 }
 
+
+
 #menuButtons {
-    position: fixed;
-    left: 35%;
-    font-family: "Lato";
-    font-size: 140%;
+    position: absolute;
+    left: 50%;
+    font-family: "Roboto";
+    font-size: 100%;
+    font-weight: 500;
 }
 
 .menuButton {
@@ -39,10 +58,9 @@ body {
     top: 33px;
     height: 34px;
     width: auto;
-    color: #efefef;
-    /*border: solid;
-    border-color: aliceblue;*/
-    margin-right: 30px;
+    color: #fff;
+    margin-right: 20px;
+    letter-spacing: 0px;
     -webkit-transition: transform 0.25s;
     -moz-transition: transform 0.25s;
     -o-transition: transform 0.25s;
@@ -55,62 +73,113 @@ body {
 
 .menuButton:hover {
     cursor: pointer;
+    color: #fff;
+    -webkit-transform: scale(1.10);
+    -moz-transform: scale(1.10);
+    -o-transform: scale(1.10);
+    transform: scale(1.10);
+
+}
+
+#moto {
+
+    margin: 0px 0px 100px 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-family: "Roboto";
+    font-weight: 100;
+    font-size: 250%;
+    margin: 0px 0px 0px 0px;
+    padding: 5px 35px 45px 35px;
+    border-radius: 50px;
     color: #dedede;
-    -webkit-transform: scale(1.15);
-    -moz-transform: scale(1.15);
-    -o-transform: scale(1.15);
-    transform: scale(1.15);
-
+    background-color: #7c7c7c;
+    white-space: nowrap;
+    letter-spacing: 0px;
+    line-height: 200%;
 }
 
-#logo {
-    position: fixed;
-    top: 5px;
-    left: 10%;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-transition: transform 0.5s;
-    -moz-transition: transform 0.5s;
-    -o-transition: transform 0.5s;
-    transition: transform 0.5s;
-}
-#logo:hover {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-}
-
-.square {
-    width: 20px;
-    height: 20px;
-    color: #dedede;
-}
-
-.v {
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
-    border-color: #dedede;
-}
-
-
-.h {
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    border-color: #dedede;
-}
-.h img {
-    position: relative;
-    top: 2px;
+#moto div {
+    margin: 0px 0px 0px 0px;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 350%;
+    padding: 0px 0px 0px 0px;
 }
 
 #secondScreen {
     height: 100%;
+    background-color: #efefef;
 }
+
+
+#about1 {
+    box-sizing: border-box;
+    position: absolute;
+    top: 150%;
+    left: 27.5%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    height: 70%;
+    background: #fff;
+    padding: 2% 2% 2% 2%;
+    color: black;
+    border-radius: 25px;
+    font-family: "Roboto";
+    line-height: 175%;
+
+}
+#about2 {
+    position: absolute;
+    box-sizing: border-box;
+    top: 150%;
+    left: 67.5%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    height: 70%;
+    background: #fff;
+    padding: 2% 2% 2% 2%;
+    color: black;
+    border-radius: 25px;
+    font-family: "Roboto";
+    line-height: 175%;
+}
+
+
 
 #thirtScreen {
     height: 100%;
-    background-color: aqua;
+    background-color: #efefef;
+}
+
+#dojazd {
+    box-sizing: border-box;
+    position: absolute;
+    top: 250%;
+    left: 27.5%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    height: 20%;
+    background: #fff;
+    padding: 2% 2% 2% 2%;
+    color: black;
+    border-radius: 25px;
+    font-family: "Roboto";
+    line-height: 175%;;
+}
+
+#googleMap{
+    border-radius: 25px;
+    position: absolute;
+    box-sizing: border-box;
+    top: 250%;
+    left: 67.5%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
